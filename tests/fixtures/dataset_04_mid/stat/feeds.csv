@@ -1,0 +1,6 @@
+,feed_name,feed_extensiveness,feed_completeness,feed_timeliness,feed_wl_overlap,feed_source_confidence,feed_size
+0,feed_4.csv,0.942,0.216,1.0,0.135,0.62,731
+1,feed_3.csv,0.955,0.149,1.0,0.2,0.652,503
+2,feed_1.csv,0.945,0.202,1.0,0.545,0.792,682
+3,feed_0.csv,0.943,0.162,1.0,0.568,0.801,548
+4,feed_2.csv,0.94,0.271,1.0,0.35,0.709,918

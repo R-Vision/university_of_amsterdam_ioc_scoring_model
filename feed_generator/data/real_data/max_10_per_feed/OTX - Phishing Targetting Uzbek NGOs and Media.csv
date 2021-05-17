@@ -1,0 +1,11 @@
+,id,value,first_seen,last_seen,relationship_count,detections_count
+0,fb84c3ec-b60b-338c-884e-9b05ea933b1a,3959c138e8b8078e683849795e156f98,2020-09-29,2020-09-29,1,0
+1,093d05cb-1a85-3836-8a40-c88df8d4ba01,auth-mail.me,2020-09-29,2020-09-29,1,0
+2,bbc937e8-2d33-3e60-b632-1c8b37d2fd12,mx.email-x.com,2020-09-29,2020-09-29,1,0
+3,0ce5c89b-aa9b-3f5e-b2c5-17cc78eea400,mail.googl.con.mail-support.info,2020-09-29,2020-09-29,1,0
+4,5e77ef5e-ae30-3894-b7d2-cf3837cccb2a,see.document.my-cabinet.com,2020-09-29,2020-09-29,1,0
+5,ec1ec3e8-6a64-34a0-99d8-b27dc7ad2dd2,auth.yandex.ru.mail-help-support.info,2020-09-29,2020-09-29,1,0
+6,908a8b20-25af-3264-b2de-dee96e4c2f80,326e88561ded6371be008af61bf9594d,2020-09-29,2020-09-29,1,0
+7,ab4f9a3a-2bf2-3aeb-beae-0bd044b15cab,login.mail.ru.email-x.com,2020-09-29,2020-09-29,1,0
+8,03862173-fb1c-301c-8c36-f2564bed89f2,bb6f2dfcec87551e99f9cf331c990617,2020-09-29,2020-09-29,1,0
+9,fd823d5a-2691-36de-9906-76e80953f8e1,support-email.host,2020-08-08,2019-05-23,2,0

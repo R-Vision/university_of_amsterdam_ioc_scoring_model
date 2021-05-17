@@ -1,0 +1,8 @@
+pandas==1.2.4
+dirhash==0.2.1
+numpy==1.20.1
+plotly==4.14.3
+tqdm==4.60.0
+pytest==5.4.3
+auto_mix_prep==0.2.0
+python_dateutil==2.8.1

@@ -1,0 +1,689 @@
+[
+    {
+        "feed_name": "emergingThreatsCompromisedIPs.csv",
+        "score_data": [
+            {
+                "value": "23.129.64.207",
+                "score": 57,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 2,
+                "source_confidences": [
+                    0.342,
+                    0.696
+                ],
+                "feeds_scores": [
+                    98,
+                    98
+                ]
+            },
+            {
+                "value": "185.100.86.154",
+                "score": 34,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.342
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "51.79.86.175",
+                "score": 0,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-01-13",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.342
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "185.220.103.9",
+                "score": 57,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 2,
+                "source_confidences": [
+                    0.342,
+                    0.696
+                ],
+                "feeds_scores": [
+                    98,
+                    98
+                ]
+            },
+            {
+                "value": "45.154.168.201",
+                "score": 0,
+                "first_seen": "2010-08-12",
+                "last_seen": "2021-01-13",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.342
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "162.247.74.200",
+                "score": 34,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.342
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "162.247.74.74",
+                "score": 34,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.342
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "185.220.103.7",
+                "score": 34,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.342
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "195.144.21.219",
+                "score": 34,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.342
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "51.91.229.20",
+                "score": 0,
+                "first_seen": "2010-09-01",
+                "last_seen": "2021-01-13",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.342
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "feed_name": "feodotrackerIpBL.csv",
+        "score_data": [
+            {
+                "value": "212.174.19.87",
+                "score": 0,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-02-11",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.426
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "24.196.13.216",
+                "score": 0,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-02-11",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.426
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "98.109.204.230",
+                "score": 0,
+                "first_seen": "2010-08-19",
+                "last_seen": "2021-02-11",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.426
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "181.143.101.19",
+                "score": 0,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-02-11",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.426
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "87.106.1.205",
+                "score": 40,
+                "first_seen": "2010-09-01",
+                "last_seen": "2021-03-14",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.426
+                ],
+                "feeds_scores": [
+                    95
+                ]
+            },
+            {
+                "value": "210.56.10.58",
+                "score": 0,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-02-11",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.426
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "174.100.27.229",
+                "score": 0,
+                "first_seen": "2010-08-15",
+                "last_seen": "2021-02-11",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.426
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "98.15.140.226",
+                "score": 0,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-02-11",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.426
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "185.142.99.94",
+                "score": 0,
+                "first_seen": "2010-09-01",
+                "last_seen": "2020-10-30",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.426
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "187.64.128.197",
+                "score": 0,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-02-11",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.426
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "feed_name": "danUkAllTorNodes.csv",
+        "score_data": [
+            {
+                "value": "85.159.237.210",
+                "score": 57,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 2,
+                "source_confidences": [
+                    0.351,
+                    0.696
+                ],
+                "feeds_scores": [
+                    98,
+                    98
+                ]
+            },
+            {
+                "value": "91.62.19.201",
+                "score": 0,
+                "first_seen": "2010-12-22",
+                "last_seen": "2020-12-22",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.351
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "5.63.56.46",
+                "score": 0,
+                "first_seen": "2010-12-22",
+                "last_seen": "2020-12-22",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.351
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "2605:6400:0020:08da:0000:0000:0000:0001",
+                "score": 0,
+                "first_seen": "2010-08-05",
+                "last_seen": "2020-10-04",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.351
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "77.3.170.199",
+                "score": 0,
+                "first_seen": "2010-12-22",
+                "last_seen": "2020-12-22",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.351
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "92.117.172.34",
+                "score": 0,
+                "first_seen": "2010-12-22",
+                "last_seen": "2020-12-22",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.351
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "2a01:04f9:c010:da36:0000:0000:0000:0001",
+                "score": 0,
+                "first_seen": "2020-10-28",
+                "last_seen": "2020-12-22",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.351
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "77.13.172.172",
+                "score": 0,
+                "first_seen": "2010-12-22",
+                "last_seen": "2020-12-22",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.351
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "91.9.223.232",
+                "score": 0,
+                "first_seen": "2010-12-22",
+                "last_seen": "2020-12-22",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.351
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "77.4.22.137",
+                "score": 0,
+                "first_seen": "2010-12-22",
+                "last_seen": "2020-12-22",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.351
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            }
+        ]
+    },
+    {
+        "feed_name": "circl.csv",
+        "score_data": [
+            {
+                "value": "turp.pw",
+                "score": 51,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.517
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "retilio.com",
+                "score": 49,
+                "first_seen": "2010-10-22",
+                "last_seen": "2021-03-14",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.517
+                ],
+                "feeds_scores": [
+                    95
+                ]
+            },
+            {
+                "value": "52.28.249.128",
+                "score": 51,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.517
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "46.183.217.132",
+                "score": 0,
+                "first_seen": "2015-07-07",
+                "last_seen": "2013-08-09",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.517
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "vbc.exe",
+                "score": 51,
+                "first_seen": "2010-08-27",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.517
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "swio.pw",
+                "score": 51,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.517
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "e810c74aefd63ce4ea674a1a961075a4d86a10b802d365b6b2b98a724d9b86db",
+                "score": 0,
+                "first_seen": "2010-10-22",
+                "last_seen": "2018-10-23",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.517
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "zugh.us",
+                "score": 51,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.517
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "185.78.64.121",
+                "score": 51,
+                "first_seen": "2010-06-23",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.517
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "79.143.87.174",
+                "score": 49,
+                "first_seen": "2010-11-09",
+                "last_seen": "2021-03-14",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.517
+                ],
+                "feeds_scores": [
+                    95
+                ]
+            }
+        ]
+    },
+    {
+        "feed_name": "checkpointTOR.csv",
+        "score_data": [
+            {
+                "value": "85.159.237.210",
+                "score": 57,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 2,
+                "source_confidences": [
+                    0.351,
+                    0.696
+                ],
+                "feeds_scores": [
+                    98,
+                    98
+                ]
+            },
+            {
+                "value": "192.145.47.196",
+                "score": 0,
+                "first_seen": "2010-12-22",
+                "last_seen": "2021-01-01",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.696
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "185.220.103.9",
+                "score": 57,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 2,
+                "source_confidences": [
+                    0.342,
+                    0.696
+                ],
+                "feeds_scores": [
+                    98,
+                    98
+                ]
+            },
+            {
+                "value": "205.185.117.28",
+                "score": 0,
+                "first_seen": "2010-12-16",
+                "last_seen": "2021-01-13",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.696
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "144.172.118.2",
+                "score": 0,
+                "first_seen": "2010-11-02",
+                "last_seen": "2021-01-13",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.696
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "23.129.64.207",
+                "score": 57,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 2,
+                "source_confidences": [
+                    0.342,
+                    0.696
+                ],
+                "feeds_scores": [
+                    98,
+                    98
+                ]
+            },
+            {
+                "value": "199.249.230.172",
+                "score": 68,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-03-15",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.696
+                ],
+                "feeds_scores": [
+                    98
+                ]
+            },
+            {
+                "value": "80.127.116.96",
+                "score": 0,
+                "first_seen": "2010-08-05",
+                "last_seen": "2021-01-13",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.696
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "83.97.20.205",
+                "score": 0,
+                "first_seen": "2010-12-17",
+                "last_seen": "2021-02-14",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.696
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            },
+            {
+                "value": "199.195.249.217",
+                "score": 0,
+                "first_seen": "2010-12-21",
+                "last_seen": "2020-12-22",
+                "ioc_mentions": 1,
+                "source_confidences": [
+                    0.696
+                ],
+                "feeds_scores": [
+                    0
+                ]
+            }
+        ]
+    }
+]
