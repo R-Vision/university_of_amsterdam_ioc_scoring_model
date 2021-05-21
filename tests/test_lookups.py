@@ -16,6 +16,7 @@ FIXTURES_DIR = join(pathlib.Path(__file__).parent.absolute(), "fixtures")
 DATASET_NAME = "dataset_04_mid"
 DATASET_DIR = join(FIXTURES_DIR, DATASET_NAME)
 
+
 @pytest.fixture(scope="class")
 def fixtures() -> Tuple[List[Dict[str, Any]], Any, DataFrame, DataFrame]:
     cti_feeds_path = join(DATASET_DIR, "feeds")
@@ -28,6 +29,7 @@ def fixtures() -> Tuple[List[Dict[str, Any]], Any, DataFrame, DataFrame]:
     feeds_stats = io.load_feed_statistics(cti_feeds_path, "feeds.csv")
 
     return cti_feeds, lookup_df, iocs_stats, feeds_stats
+
 
 class TestLookups:
     def test_find_feed_ioc_mentioned_in(self, fixtures):
@@ -59,7 +61,7 @@ class TestLookups:
     def test_get_feed_source_confidence(self, fixtures):
         _, _, _, feeds_stats = fixtures
         result = lookups.get_feed_source_confidence("feed_2.csv", feeds_stats)
-        assert result == 0.709
+        assert result == 0.634
 
     def test_find_min_date(self, fixtures):
         cti_feeds, _, _, _ = fixtures

@@ -32,7 +32,9 @@ def str2timestamp(date_iso: str) -> float:
 
 
 @pytest.fixture(scope="class")
-def fixtures() -> Tuple[List[Dict[str, Any]], Any, DataFrame, DataFrame]:
+def fixtures() -> Tuple[List[Dict[str, Any]], Any, DataFrame, DataFrame, float]:
+    now = str2timestamp("2021-03-07")
+
     with HowLong("fixtures"):
         cti_feeds_path = join(DATASET_DIR, "feeds")
 
@@ -43,7 +45,7 @@ def fixtures() -> Tuple[List[Dict[str, Any]], Any, DataFrame, DataFrame]:
         iocs_stats = io.load_iocs_statistics(cti_feeds_path, "iocs.csv")
         feeds_stats = io.load_feed_statistics(cti_feeds_path, "feeds.csv")
 
-    return cti_feeds, lookup_df, iocs_stats, feeds_stats
+    return cti_feeds, lookup_df, iocs_stats, feeds_stats, now
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -61,20 +63,20 @@ class TestStatisticCalculation:
         assert score == 4.9
 
     def _test_dump_iocs_score(self, fixtures):
-        cti_feeds, lookup_df, iocs_stats, feeds_stats = fixtures
+        cti_feeds, lookup_df, iocs_stats, feeds_stats, now = fixtures
         with HowLong("calculating overall"):
             scores = _calculate_iocs_score(
-                cti_feeds, lookup_df, iocs_stats, feeds_stats
+                cti_feeds, lookup_df, iocs_stats, feeds_stats, now
             )
 
         with open(join(DATASET_DIR, "stat", "scores.json"), "w") as f:
             json.dump(scores, f, indent=2)
 
     def test_calculate_iocs_score(self, fixtures):
-        cti_feeds, lookup_df, iocs_stats, feeds_stats = fixtures
+        cti_feeds, lookup_df, iocs_stats, feeds_stats, now = fixtures
         with HowLong("calculating overall"):
             scores = _calculate_iocs_score(
-                cti_feeds, lookup_df, iocs_stats, feeds_stats
+                cti_feeds, lookup_df, iocs_stats, feeds_stats, now
             )
 
         with open(join(DATASET_DIR, "stat", "scores.json")) as f:
