@@ -1,0 +1,16 @@
+venv/
+.idea
+src/amsterdam_model/feed_generator/data/*
+.ipynb_checkpoints
+__pycache__
+.pytest_cache
+*.pyc
+*vscode*
+.DS_Store
+.coverage
+.coverage*
+*-checkpoint.ipynb
+.checksum
+.iocs-statistics
+.feeds-statistics
+/src/amsterdam_model/stat_probe.py
