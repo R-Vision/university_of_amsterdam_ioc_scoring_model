@@ -1,24 +1,15 @@
+import datetime
 import json
 import pathlib
 import time
-import datetime
 from os.path import join
-from typing import Tuple, List, Dict, Any
+from typing import Any, Dict, List, Tuple
 
 import pytest
+from helpers import io
+from helpers.howlong import HowLong, howlong_flush_stat
 from pandas import DataFrame
-
-try:
-    from src.amsterdam_model.helpers import io
-    from src.amsterdam_model.helpers.howlong import howlong_flush_stat, HowLong
-    from src.amsterdam_model.scoring_engine import (
-        get_single_feed_ioc_score,
-        _calculate_iocs_score,
-    )
-except ImportError:
-    from helpers import io
-    from helpers.howlong import howlong_flush_stat, HowLong
-    from scoring_engine import get_single_feed_ioc_score, _calculate_iocs_score
+from scoring_engine import _calculate_iocs_score, get_single_feed_ioc_score
 
 FIXTURES_DIR = join(pathlib.Path(__file__).parent.absolute(), "fixtures")
 

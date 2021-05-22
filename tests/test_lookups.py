@@ -5,10 +5,7 @@ from typing import Any, Dict, List, Tuple
 import pytest
 from pandas import DataFrame
 
-try:
-    from src.amsterdam_model.helpers import io,lookups
-except ImportError:
-    from helpers import io, lookups
+from helpers import io, lookups
 
 
 FIXTURES_DIR = join(pathlib.Path(__file__).parent.absolute(), "fixtures")
@@ -35,11 +32,9 @@ class TestLookups:
     def test_find_feed_ioc_mentioned_in(self, fixtures):
         cti_feeds, lookup_df, iocs_stats, feeds_stats = fixtures
 
-        result = lookups.find_feeds_name_ioc_mentioned_in(
-            "65.42.162.18", iocs_stats
-        )
+        result = lookups.find_feeds_name_ioc_mentioned_in("65.42.162.18", iocs_stats)
         if result:
-            assert result == ['feed_2.csv']
+            assert result == ["feed_2.csv"]
         else:
             assert result == []
 
@@ -56,8 +51,8 @@ class TestLookups:
     def test_find_feeds_name_ioc_mentioned_in(self, fixtures):
         _, _, iocs_stats, _ = fixtures
         result = lookups.find_feeds_name_ioc_mentioned_in("65.42.162.18", iocs_stats)
-        assert result == ['feed_2.csv']
-    
+        assert result == ["feed_2.csv"]
+
     def test_get_feed_source_confidence(self, fixtures):
         _, _, _, feeds_stats = fixtures
         result = lookups.get_feed_source_confidence("feed_2.csv", feeds_stats)

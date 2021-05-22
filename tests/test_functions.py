@@ -5,16 +5,10 @@ from random import randint
 from datetime import datetime
 
 
-try:
-    from src.amsterdam_model.helpers.parse_array import parse_array
-    from src.amsterdam_model import functions
-    from src.amsterdam_model.helpers import stats
-    from src.amsterdam_model.feed_generator.generators import FakeGenerators
-except ImportError:
-    import functions
-    from helpers import stats
-    from helpers.parse_array import parse_array
-    from feed_generator.generators import FakeGenerators
+import functions
+from helpers import stats
+from helpers.parse_array import parse_array
+from feed_generator.generators import FakeGenerators
 
 fake = FakeGenerators()
 EPOCH_DAY: int = 86400  # Milliseconds format

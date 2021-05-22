@@ -1,16 +1,11 @@
-from os.path import join
-import random
-from typing import Tuple
 import pathlib
+import random
+from os.path import join
+from typing import Tuple
 
 import pytest
-
-try:
-    from src.amsterdam_model.helpers import stats, io
-    from src.amsterdam_model.helpers.howlong import HowLong, howlong_flush_stat
-except ImportError:
-    from helpers import stats, io
-    from helpers.howlong import HowLong, howlong_flush_stat
+from helpers import io, stats
+from helpers.howlong import HowLong, howlong_flush_stat
 
 FIXTURES_DIR = join(pathlib.Path(__file__).parent.absolute(), "fixtures")
 
