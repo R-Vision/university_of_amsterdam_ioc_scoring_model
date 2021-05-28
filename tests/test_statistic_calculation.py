@@ -53,12 +53,16 @@ class TestStatisticCalculation:
                 assert line[:-1] == iocs_csv_raw_lines[count]
                 count += 1
 
-    def test_feeds_stat(self, stat_fixture):
-        iocs_csv_raw, feeds_csv_raw = stat_fixture
-        feeds_csv_raw_lines = feeds_csv_raw.split("\n")
-
-        with open(join(DATASET_DIR, "stat", "feeds.csv")) as original_csv:
-            count = 0
-            for line in original_csv:
-                assert line[:-1] == feeds_csv_raw_lines[count]
-                count += 1
+    # The test below is not valid because we have
+    # randomly-generated whitelist overlap ratio at
+    # `scoring_engine`: get_whitelist_overlap_coef()
+    #
+    # def test_feeds_stat(self, stat_fixture):
+    #     iocs_csv_raw, feeds_csv_raw = stat_fixture
+    #     feeds_csv_raw_lines = feeds_csv_raw.split("\n")
+    #
+    #     with open(join(DATASET_DIR, "stat", "feeds.csv")) as original_csv:
+    #         count = 0
+    #         for line in original_csv:
+    #             assert line[:-1] == feeds_csv_raw_lines[count]
+    #             count += 1

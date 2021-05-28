@@ -1,10 +1,6 @@
 from typing import List, Optional
 import pandas as pd
-
-try:
-    from src.amsterdam_model.helpers.parse_array import parse_array
-except ImportError:
-    from helpers.parse_array import parse_array
+from helpers.parse_array import parse_array
 
 
 def feeds_ioc_mentioned_in(ioc_value: str, df) -> List[str]:

@@ -3,16 +3,10 @@ from typing import Any, Dict, List, Tuple, Union
 
 import pandas as pd
 from dateutil import parser
+import scoring_engine as engine
 
-try:
-    import src.amsterdam_model.scoring_engine as engine
-    from src.amsterdam_model.helpers import lookups
-    from src.amsterdam_model.helpers.howlong import HowLong
-except ImportError:
-    import scoring_engine as engine
-
-    from helpers import lookups
-    from helpers.howlong import HowLong
+from helpers import lookups
+from helpers.howlong import HowLong
 
 
 def date_to_unixtime(time: str) -> int:
@@ -163,11 +157,11 @@ def calculate_all_statistics(cti_feeds, use_tqdm=True) -> Dict[str, Any]:
     TODO: Force recalculate stats in case when `functions.py` has
     been modified (formulas, constants, etc)
     """
+    result: Dict[str, Any] = {}
+
     try:
         with HowLong("prepare of metadata"):
             iocs_min_date, iocs_feed_names = _get_meta_data(cti_feeds, use_tqdm)
-
-        result = dict()
         with HowLong("result['iocs']"):
             result["iocs"] = _calculate_iocs_statistics(
                 cti_feeds, iocs_min_date, iocs_feed_names, use_tqdm=use_tqdm

@@ -5,16 +5,10 @@ from random import randint
 
 from pandas import DataFrame, Series
 
-try:
-    from src.amsterdam_model.helpers.howlong import HowLong
-    import src.amsterdam_model.functions as functions
-    from src.amsterdam_model.helpers import io, lookups, stats
-    from src.amsterdam_model.helpers.integrity_checker import is_modified
-except ImportError:
-    import functions
-    from helpers import io, lookups, stats
-    from helpers.howlong import HowLong
-    from helpers.integrity_checker import is_modified
+import functions
+from helpers import io, lookups, stats
+from helpers.howlong import HowLong
+from helpers.integrity_checker import is_modified
 
 DECAY_RATE: float = 0.5
 DECAY_TTL: int = 10
@@ -124,18 +118,12 @@ def get_whitelist_overlap_coef(cti_feed: DataFrame) -> float:
 
     Returns: functions.whitelist_overlap_score()
     """
-    """
-    NOTE: OVERLAP FUNCTION IS A MOCK NOW, JUST FOR
-    TESTING REASONS
-
-    TODO: Make working version of function.
-    """
 
     feed_iocs_count: int = len(cti_feed.index)
 
     wl_iocs: int = randint(
         0, round(feed_iocs_count * 0.1)
-    )  # Randomly generate WL iocs (max 10% of feed)
+    )  # NOTE: Randomly generate WL iocs (max 10% of feed), real WL overlap not implemented yet
 
     return functions.whitelist_overlap_score(wl_iocs, feed_iocs_count)
 
