@@ -1,6 +1,6 @@
 # О репозитории
 
-Этот репозиторий содержит реализацию алгоритма скоринга индикаторов компрометации, предложеннную в исследовании [«Scoring model for IoCs by combining open intelligence feeds to reduce false positives»](https://delaat.net/rp/2019-2020/p55/report.pdf) университета Амстердама на языке Python.
+Этот репозиторий содержит реализацию алгоритма скоринга индикаторов компрометации, предложенную в исследовании [«Scoring model for IoCs by combining open intelligence feeds to reduce false positives»](https://homepages.staff.os3.nl/~delaat/rp/2019-2020/p55/report.pdf) университета Амстердама на языке Python.
 
 ## Термины
 
@@ -33,7 +33,7 @@
 
 Далее, для каждого индикатора компрометации (каждого фида в директории), начинает расчитываться рейтинг и выдается в виде массива с именами фидов и парами «значений IoC, рейтинг IoC».
 
-Механика расчета отлично описана в исходном исследовании [«Scoring model for IoCs by combining open intelligence feeds to reduce false positives»](https://delaat.net/rp/2019-2020/p55/report.pdf), пересказывать ее нам кажется излишне здесь. В коде, математика расчетов находится в `functions.py`, механика — в `scoring_engine.py`.  
+Механика расчета отлично описана в исходном исследовании [«Scoring model for IoCs by combining open intelligence feeds to reduce false positives»](https://homepages.staff.os3.nl/~delaat/rp/2019-2020/p55/report.pdf), пересказывать ее нам кажется излишне здесь. В коде, математика расчетов находится в `functions.py`, механика — в `scoring_engine.py`.  
 
 ## Ограничения и костыли
 
