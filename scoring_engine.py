@@ -133,7 +133,7 @@ def get_source_confidence(
     completeness: float,
     timeliness: float,
     wl_overlap_coef: float,
-):
+) -> float:
     """
     Function wrapper calculates source confidence for the specified params
 
@@ -176,7 +176,7 @@ def get_single_feed_ioc_score(
     date_now: float,
     decay_rate=DECAY_RATE,
     decay_ttl=DECAY_TTL,
-):
+) -> Union[int, float]:
     """
     Function calculates score for the single feed
     """
@@ -196,7 +196,7 @@ def calculate_iocs_score(
     cti_feeds_path: str,
     skip_is_modified=False,
     dt_now=time.mktime(datetime.now().timetuple()),
-):
+) -> List[Dict]:
     """
     Function initializes and loads statistics dataframes,
     if statistics in not exists recalculates them
@@ -235,7 +235,7 @@ def _calculate_iocs_score(
     feeds_stats: DataFrame,
     dt_now: float = time.mktime(datetime.now().timetuple()),
     use_tqdm=False,
-):
+) -> List[Dict]:
     """
     Function calculates the final score of IoCs
     """
