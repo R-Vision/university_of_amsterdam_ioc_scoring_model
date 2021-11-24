@@ -149,7 +149,9 @@ def _get_meta_data(cti_feeds, use_tqdm=True) -> Tuple[Any, Any]:
     return iocs_min_date, iocs_feed_names
 
 
-def calculate_all_statistics(cti_feeds: List[Dict[str, Any]], use_tqdm=True) -> Dict[str, Any]:
+def calculate_all_statistics(
+    cti_feeds: List[Dict[str, Any]], use_tqdm=True
+) -> Dict[str, Any]:
     """
     Wrapper for start calculating feeds and iocs stats simultaneosly
     and write results into the files

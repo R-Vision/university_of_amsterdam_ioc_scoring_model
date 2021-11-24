@@ -2,13 +2,14 @@ import os
 from timeit import default_timer as timer
 from typing import Dict
 
-is_enabled = os.environ.get('HOWLONG_ENABLE', 'false').lower()
-is_enabled = is_enabled == 'true' or is_enabled == '1'
+is_enabled = os.environ.get("HOWLONG_ENABLE", "false").lower()
+is_enabled = is_enabled == "true" or is_enabled == "1"
 
 howlong_time_dict: Dict[str, int] = dict()
 howlong_call_count_dict: Dict[str, int] = dict()
 
 if is_enabled:
+
     class HowLong:
         def __init__(self, name):
             self.start = None
@@ -21,9 +22,12 @@ if is_enabled:
             delta = timer() - self.start
             howlong_time_dict[self.name] = howlong_time_dict.get(self.name, 0) + delta
             howlong_call_count_dict[self.name] = (
-                    howlong_call_count_dict.get(self.name, 0) + 1
+                howlong_call_count_dict.get(self.name, 0) + 1
             )
+
+
 else:
+
     class HowLong:
         def __init__(self, *args, **kwargs):
             pass
