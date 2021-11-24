@@ -156,13 +156,13 @@ def calculate_timeliness_sigma(
     """
     TODO:
 
-    Equation below from original paper is based on LAMBDA contant
+    Equation below from original paper is based on LAMBDA constant
     which makes the final score more accurate, but gives high negative
     numbers in cases when we tried to assess old feeds.
 
     sigma += (min_first_seen - curr_first_seen + LAMBDA) / LAMBDA
 
-    So we might think about how to dymanically calculated LAMBDA,
+    So we might think about how to dynamically calculated LAMBDA,
     for example on overall feeds timestamps statistics,
     e.g LAMBDA(min_first_seen, max_first_seen)
     """
