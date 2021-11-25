@@ -1,6 +1,6 @@
 import time
 from datetime import datetime
-from typing import List, Dict, Union, Any
+from typing import List, Dict, Tuple, Union, Any
 from random import randint
 
 from pandas import DataFrame, Series
@@ -194,8 +194,8 @@ def get_single_feed_ioc_score(
 
 def calculate_iocs_score(
     cti_feeds_path: str,
-    skip_is_modified=False,
-    dt_now=time.mktime(datetime.now().timetuple()),
+    skip_is_modified: bool = False,
+    dt_now: float = time.mktime(datetime.now().timetuple()),
 ) -> List[Dict]:
     """
     Function initializes and loads statistics dataframes,
